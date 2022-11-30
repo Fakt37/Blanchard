@@ -4,7 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Blanchard - художественная галерея</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__up">
+        <div class="container">
+          <div class="header__menu">
+            <a href="#" class="header__logo">
+              <picture>
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="img/logo/logo-768-1024.svg" />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="img/logo/logo-320.svg" />
+                <img
+                  src="img/logo/logo-main.svg"
+                  alt="Логотип: Blanchard"
+                  class="header__logo--img" />
+              </picture>
+            </a>
+            <nav class="header__nav">
+              <ul class="header__list list-reset">
+                <li class="header__item">
+                  <a href="#about" class="header__link">О нас</a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">Галерея</a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">События</a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">Проекты</a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="header__login">
+              <svg class="header__login--icon">
+                <use xlink:href="img/sprite.svg#login"></use>
+              </svg>
+              Войти
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="lib/focus-visible.min.js"></script>
+  </body>
 </html>
