@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+  //preloader
+  window.onload = function () {
+    setTimeout(function () {
+      document.querySelector('.preloader').classList.add('preloader__remove');
+    }, 400);
+  };
   //Scroll document
   const anchors = document.querySelectorAll('a[href*="#"]');
   for (let anchor of anchors) {
